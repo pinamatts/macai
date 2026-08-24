@@ -29,6 +29,15 @@ Single-page marketing website for MAC AI Business Solutions (Cebu-based AI ERP +
 - Screenshots: hero, ERP, vision toggle both modes, form submit → success panel + toast
 - No console errors
 
+## Implemented (2026-08-24, update 1 — Real Product Shots)
+- Xyver Vision Mockup AVP (.mov/HEVC, 50s) transcoded to H.264 MP4 (1080p, 24MB, faststart) → /public/media/xyver-vision-avp.mp4
+- "Xyver Vision — Product Reel" video player embedded at top of Vision section (poster: frame-5, click-to-play, sound)
+- 17 frames extracted to /public/media/frames/; both dashboard tile grids now use real product stills:
+  LGU: frame-41 (LGU Vision junction wall), frame-26 (map network), frame-17 (ops wall), frame-11 (personnel detection)
+  Schools: frame-35 (campus dashboard), frame-38 (unauthorized entry), frame-32 (restricted zone), frame-8 (personnel)
+- CameraTile gained `bright` prop so product UI stills render clearly; "Stills from the Xyver Vision product reel" captions added
+- Verified: mp4/poster/frames serve 200; video plays in-browser (currentTime advanced, readyState 4)
+
 ## Personas
 - LGU leadership (mayor's office, administrators) evaluating gov ERP + traffic/public-space vision
 - School administrators/security heads evaluating campus safety vision

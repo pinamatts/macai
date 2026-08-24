@@ -2,11 +2,11 @@ import { Crosshair, Users, Siren, DoorClosed, GraduationCap, ShieldCheck, Clipbo
 import { Reveal } from "../Reveal";
 import { CameraTile, DashStat } from "./shared";
 
-const IMG = {
-  gate: "https://images.pexels.com/photos/33591766/pexels-photo-33591766.jpeg",
-  corridor: "https://images.pexels.com/photos/30576172/pexels-photo-30576172.jpeg",
-  quad: "https://images.unsplash.com/photo-1501290301209-7a0323622985",
-  gym: "https://images.unsplash.com/photo-1618482914248-29272d021005",
+const REEL = {
+  dashboard: "/media/frames/frame-35.jpg",
+  access: "/media/frames/frame-38.jpg",
+  intrusion: "/media/frames/frame-32.jpg",
+  personnel: "/media/frames/frame-8.jpg",
 };
 
 const ALERTS = [
@@ -56,14 +56,10 @@ export default function SchoolsPanel() {
       <Reveal delay={0.15}>
         <div className="mt-14 grid gap-6 lg:grid-cols-3" data-testid="schools-dashboard">
           <div className="grid gap-6 sm:grid-cols-2 lg:col-span-2">
-            <CameraTile testId="schools-cam-gate" label="CAM 01 — Main Gate" img={IMG.gate}
-              boxes={[{ x: "52%", y: "28%", w: "16%", h: "46%", label: "Person 0.96" }, { x: "68%", y: "52%", w: "12%", h: "18%", label: "Object 0.91", warn: true }]} />
-            <CameraTile testId="schools-cam-corridor" label="CAM 02 — Corridor B" img={IMG.corridor}
-              boxes={[{ x: "30%", y: "35%", w: "30%", h: "32%", label: "Crowd forming", warn: true }]} />
-            <CameraTile testId="schools-cam-quad" label="CAM 03 — Quadrangle" img={IMG.quad}
-              boxes={[{ x: "44%", y: "40%", w: "14%", h: "38%", label: "Person 0.94" }]} />
-            <CameraTile testId="schools-cam-gym" label="CAM 04 — Gym Entry" img={IMG.gym}
-              boxes={[{ x: "58%", y: "30%", w: "20%", h: "40%", label: "Forced entry?", warn: true }]} />
+            <CameraTile bright testId="schools-cam-gate" label="Campus Dashboard — Corridor Feeds" img={REEL.dashboard} />
+            <CameraTile bright testId="schools-cam-corridor" label="Access — Unauthorized Entry" img={REEL.access} />
+            <CameraTile bright testId="schools-cam-quad" label="Alert — Restricted Zone Intrusion" img={REEL.intrusion} />
+            <CameraTile bright testId="schools-cam-gym" label="Detection — Personnel" img={REEL.personnel} />
           </div>
 
           <div className="flex flex-col gap-4 border border-white/10 bg-mac-surface/60 p-5">
@@ -89,6 +85,7 @@ export default function SchoolsPanel() {
             </div>
           </div>
         </div>
+        <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-600">Stills from the Xyver Vision product reel</p>
       </Reveal>
 
       <div className="mt-24 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">

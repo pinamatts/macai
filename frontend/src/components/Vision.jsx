@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Building2, GraduationCap } from "lucide-react";
-import { SectionHeading, Reveal } from "./Reveal";
+import { Play, Building2, GraduationCap } from "lucide-react";
+import { SectionHeading, Reveal, Corners } from "./Reveal";
 import LguPanel from "./vision/LguPanel";
 import SchoolsPanel from "./vision/SchoolsPanel";
 
@@ -25,6 +25,28 @@ export default function Vision() {
           sub="One AI layer over the cameras you already own. Two missions: safer cities, and safer campuses."
           testId="vision-heading"
         />
+
+        <Reveal delay={0.05}>
+          <div className="relative mb-16 border border-white/10 bg-mac-surface/60" data-testid="vision-product-reel">
+            <Corners />
+            <div className="flex items-center justify-between border-b border-white/10 px-5 py-3.5">
+              <span className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400">
+                <Play className="h-3.5 w-3.5 text-mac-accent" /> Xyver Vision — Product Reel
+              </span>
+              <span className="font-mono text-[10px] uppercase tracking-widest text-slate-500">0:50 · Sound on</span>
+            </div>
+            <video
+              data-testid="vision-reel-video"
+              controls
+              preload="metadata"
+              playsInline
+              poster="/media/frames/frame-5.jpg"
+              className="aspect-video w-full bg-black"
+            >
+              <source src="/media/xyver-vision-avp.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </Reveal>
 
         <Reveal>
           <div className="mb-16 inline-flex border border-white/15 bg-mac-surface/60 p-1" data-testid="vision-mode-toggle">

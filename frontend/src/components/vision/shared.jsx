@@ -1,9 +1,9 @@
 import { Corners, Counter } from "../Reveal";
 
-export const CameraTile = ({ label, img, boxes = [], status = "LIVE", testId }) => (
+export const CameraTile = ({ label, img, boxes = [], status = "LIVE", bright = false, testId }) => (
   <div data-testid={testId} className="group relative aspect-video overflow-hidden border border-white/10 bg-mac-surface">
-    <img src={img} alt={label} loading="lazy" className="h-full w-full object-cover opacity-55 saturate-[0.35] transition-opacity duration-500 group-hover:opacity-70" />
-    <div className="absolute inset-0 bg-mac-base/35" />
+    <img src={img} alt={label} loading="lazy" className={`h-full w-full object-cover transition-opacity duration-500 ${bright ? "opacity-90 saturate-[0.85] group-hover:opacity-100" : "opacity-55 saturate-[0.35] group-hover:opacity-70"}`} />
+    <div className={`absolute inset-0 ${bright ? "bg-mac-base/10" : "bg-mac-base/35"}`} />
     <span className="scanline absolute left-0 h-px w-full bg-mac-accent/40" />
     <div className="absolute left-2 top-2 flex items-center gap-1.5 border border-white/10 bg-mac-base/70 px-2 py-1 backdrop-blur-sm">
       <span className="h-1.5 w-1.5 animate-blink rounded-full bg-red-500" />
