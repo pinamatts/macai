@@ -4,8 +4,8 @@ import { ArrowRight, Radar, Activity, ShieldCheck } from "lucide-react";
 import { MaskLine, Reveal, Counter, Sparkline, Corners } from "./Reveal";
 import { scrollToSection } from "@/lib/scroll";
 
-const HERO_BG = "https://images.pexels.com/photos/28365587/pexels-photo-28365587.jpeg";
-const CAM_IMG = "https://images.unsplash.com/photo-1618482914248-29272d021005";
+const HERO_BG = "/media/frames/shot-junction.jpg";
+const CAM_IMG = "/media/frames/shot-cctv-wall.jpg";
 
 const PILLS = ["AI & Automation", "ERP Solutions", "Vision Intelligence", "Smart Governance", "Digital Transformation"];
 

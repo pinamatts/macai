@@ -33,14 +33,17 @@ export default function Vision() {
               <span className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400">
                 <Play className="h-3.5 w-3.5 text-mac-accent" /> Xyver Vision — Product Reel
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-widest text-slate-500">0:50 · Sound on</span>
+              <span className="font-mono text-[10px] uppercase tracking-widest text-slate-500">0:43 · Autoplays muted — unmute for sound</span>
             </div>
             <video
               data-testid="vision-reel-video"
+              autoPlay
+              muted
+              loop
               controls
               preload="metadata"
               playsInline
-              poster="/media/frames/frame-5.jpg"
+              poster="/media/frames/shot-dashboard.jpg"
               className="aspect-video w-full bg-black"
             >
               <source src="/media/xyver-vision-avp.mp4" type="video/mp4" />

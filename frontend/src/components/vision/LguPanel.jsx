@@ -3,10 +3,10 @@ import { Reveal, Sparkline } from "../Reveal";
 import { CameraTile, DashStat, ProcessSteps } from "./shared";
 
 const REEL = {
-  junction: "/media/frames/frame-41.jpg",
-  map: "/media/frames/frame-26.jpg",
-  opswall: "/media/frames/frame-17.jpg",
-  detection: "/media/frames/frame-11.jpg",
+  junction: "/media/frames/shot-junction.jpg",
+  map: "/media/frames/shot-map.jpg",
+  lobby: "/media/frames/shot-lobby.jpg",
+  opswall: "/media/frames/shot-cctv-wall.jpg",
 };
 
 const USE_CASES = [
@@ -52,8 +52,8 @@ export default function LguPanel() {
           <div className="grid gap-6 sm:grid-cols-2 lg:col-span-2">
             <CameraTile bright testId="lgu-cam-highway" label="LGU Vision — City Junction Wall" img={REEL.junction} />
             <CameraTile bright testId="lgu-cam-crossing" label="Map — City Camera Network" img={REEL.map} />
-            <CameraTile bright testId="lgu-cam-junction" label="Ops Wall — Live Feeds" img={REEL.opswall} />
-            <CameraTile bright testId="lgu-cam-market" label="Detection — Personnel Tracking" img={REEL.detection} />
+            <CameraTile bright testId="lgu-cam-junction" label="Public Space — Occupancy & Flow" img={REEL.lobby} />
+            <CameraTile bright testId="lgu-cam-market" label="Ops Wall — Live Feeds" img={REEL.opswall} />
           </div>
 
           <div className="flex flex-col gap-4 border border-white/10 bg-mac-surface/60 p-5">

@@ -38,6 +38,15 @@ Single-page marketing website for MAC AI Business Solutions (Cebu-based AI ERP +
 - CameraTile gained `bright` prop so product UI stills render clearly; "Stills from the Xyver Vision product reel" captions added
 - Verified: mp4/poster/frames serve 200; video plays in-browser (currentTime advanced, readyState 4)
 
+## Implemented (2026-08-24, update 2 — AVP cut + full imagery swap)
+- AVP re-cut per user: dropped 0–7s (both big title overlays: "YOUR CAMERAS ALREADY SEE", "XYVER VISION MAKES THEM UNDERSTAND"); MINIMAX/Hailuo AI watermark + sparkle removed via ffmpeg delogo boxes (whole video). New cut: 43s H.264, 19MB → /public/media/xyver-vision-avp.mp4
+- Reel now autoplays muted + loops (click for sound); label "0:43 · Autoplays muted"
+- ALL stock photos removed. Every image on site is now an AVP frame (shot-*.jpg, extracted from the delogo'd cut):
+  Hero bg: shot-junction (LGU Vision wall); Hero console: shot-cctv-wall; About: shot-operator
+  LGU tiles: junction wall / map network / lobby occupancy (t=37) / ops wall — factory frames dropped per user
+  Schools tiles: quad threat detection (t=43) / campus dashboard / corridor wall / field tablet
+- Old frame-*.jpg deleted. Verified: autoplay state (playing, muted), screenshots of hero/reel/LGU/schools/about, assets 200
+
 ## Personas
 - LGU leadership (mayor's office, administrators) evaluating gov ERP + traffic/public-space vision
 - School administrators/security heads evaluating campus safety vision

@@ -3,10 +3,10 @@ import { Reveal } from "../Reveal";
 import { CameraTile, DashStat } from "./shared";
 
 const REEL = {
-  dashboard: "/media/frames/frame-35.jpg",
-  access: "/media/frames/frame-38.jpg",
-  intrusion: "/media/frames/frame-32.jpg",
-  personnel: "/media/frames/frame-8.jpg",
+  quad: "/media/frames/shot-quad.jpg",
+  dashboard: "/media/frames/shot-dashboard.jpg",
+  corridors: "/media/frames/shot-corridors.jpg",
+  tablet: "/media/frames/shot-tablet.jpg",
 };
 
 const ALERTS = [
@@ -56,10 +56,10 @@ export default function SchoolsPanel() {
       <Reveal delay={0.15}>
         <div className="mt-14 grid gap-6 lg:grid-cols-3" data-testid="schools-dashboard">
           <div className="grid gap-6 sm:grid-cols-2 lg:col-span-2">
-            <CameraTile bright testId="schools-cam-gate" label="Campus Dashboard — Corridor Feeds" img={REEL.dashboard} />
-            <CameraTile bright testId="schools-cam-corridor" label="Access — Unauthorized Entry" img={REEL.access} />
-            <CameraTile bright testId="schools-cam-quad" label="Alert — Restricted Zone Intrusion" img={REEL.intrusion} />
-            <CameraTile bright testId="schools-cam-gym" label="Detection — Personnel" img={REEL.personnel} />
+            <CameraTile bright testId="schools-cam-gate" label="Campus Quad — Threat Detection" img={REEL.quad} />
+            <CameraTile bright testId="schools-cam-corridor" label="Campus Dashboard — Corridor Feeds" img={REEL.dashboard} />
+            <CameraTile bright testId="schools-cam-quad" label="Ops Wall — Corridor Feeds" img={REEL.corridors} />
+            <CameraTile bright testId="schools-cam-gym" label="Field Tablet — Live Analytics" img={REEL.tablet} />
           </div>
 
           <div className="flex flex-col gap-4 border border-white/10 bg-mac-surface/60 p-5">

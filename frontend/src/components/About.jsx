@@ -68,8 +68,8 @@ export default function About() {
               <Corners />
               <div className="relative overflow-hidden border border-white/10">
                 <img
-                  src="https://images.pexels.com/photos/30576172/pexels-photo-30576172.jpeg"
-                  alt="Security operations control room"
+                  src="/media/frames/shot-operator.jpg"
+                  alt="Xyver Vision operations wall with live camera feeds"
                   loading="lazy"
                   className="aspect-[4/5] w-full object-cover opacity-70 saturate-[0.4]"
                 />
