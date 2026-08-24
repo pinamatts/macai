@@ -24,8 +24,19 @@ export default function Hero() {
   return (
     <section id="home" ref={ref} data-testid="hero-section" className="noise relative overflow-hidden">
       <motion.div style={{ y: bgY }} className="absolute inset-0 -z-10">
-        <img src={HERO_BG} alt="" className="h-[120%] w-full object-cover opacity-30 saturate-[0.35]" />
-        <div className="absolute inset-0 bg-mac-base/72" />
+        <video
+          data-testid="hero-bg-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster={HERO_BG}
+          className="h-[120%] w-full object-cover opacity-45 saturate-[0.4]"
+        >
+          <source src="/media/xyver-hero-loop.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-mac-base/60" />
         <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-mac-base to-transparent" />
         <div className="absolute inset-0 bg-grid" />
       </motion.div>

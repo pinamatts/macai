@@ -47,6 +47,11 @@ Single-page marketing website for MAC AI Business Solutions (Cebu-based AI ERP +
   Schools tiles: quad threat detection (t=43) / campus dashboard / corridor wall / field tablet
 - Old frame-*.jpg deleted. Verified: autoplay state (playing, muted), screenshots of hero/reel/LGU/schools/about, assets 200
 
+## Implemented (2026-08-24, update 3 — Hero Video Backdrop)
+- Hero static bg replaced with slowed (0.6x → 72s loop), muted, audio-stripped 720p cut of the AVP: /public/media/xyver-hero-loop.mp4 (7MB)
+- Autoplays muted + loops + playsInline with parallax (existing useScroll/useTransform wrapper kept); poster = shot-junction.jpg; tuned to opacity-45 + bg-mac-base/60 overlay for visible motion with legible text
+- Verified: video playing in-browser (currentTime advancing, readyState 4), two screenshots 5s apart show scene change, headline contrast intact
+
 ## Personas
 - LGU leadership (mayor's office, administrators) evaluating gov ERP + traffic/public-space vision
 - School administrators/security heads evaluating campus safety vision
