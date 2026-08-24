@@ -29,7 +29,7 @@ export const MaskLine = ({ children, delay = 0, className = "" }) => (
 );
 
 export const SectionHeading = ({ index, eyebrow, title, sub, testId }) => (
-  <div className="mb-14 max-w-3xl lg:mb-20">
+  <div className="mb-10 max-w-3xl lg:mb-20">
     <Reveal>
       <p className="mb-4 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.3em] text-mac-accent">
         <span className="inline-block h-px w-8 bg-mac-accent" />

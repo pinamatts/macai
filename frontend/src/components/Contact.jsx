@@ -28,7 +28,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" data-testid="contact-section" className="relative border-t border-white/5 py-28 lg:py-36">
+    <section id="contact" data-testid="contact-section" className="relative border-t border-white/5 py-20 lg:py-36">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-50" />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading

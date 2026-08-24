@@ -54,15 +54,15 @@ export default function SchoolsPanel() {
       </Reveal>
 
       <Reveal delay={0.15}>
-        <div className="mt-14 grid gap-6 lg:grid-cols-3" data-testid="schools-dashboard">
-          <div className="grid gap-6 sm:grid-cols-2 lg:col-span-2">
+        <div className="mt-10 grid gap-4 sm:gap-6 lg:mt-14 lg:grid-cols-3" data-testid="schools-dashboard">
+          <div className="grid gap-3 sm:grid-cols-2 sm:gap-6 lg:col-span-2">
             <CameraTile bright testId="schools-cam-gate" label="Campus Quad — Threat Detection" img={REEL.quad} />
             <CameraTile bright testId="schools-cam-corridor" label="Campus Dashboard — Corridor Feeds" img={REEL.dashboard} />
             <CameraTile bright testId="schools-cam-quad" label="Ops Wall — Corridor Feeds" img={REEL.corridors} />
             <CameraTile bright testId="schools-cam-gym" label="Field Tablet — Live Analytics" img={REEL.tablet} />
           </div>
 
-          <div className="flex flex-col gap-4 border border-white/10 bg-mac-surface/60 p-5">
+          <div className="flex flex-col gap-4 border border-white/10 bg-mac-surface/60 p-4 sm:p-5">
             <p className="flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400">
               Priority Alerts
               <span className="flex items-center gap-1.5 text-red-400"><span className="h-1.5 w-1.5 animate-blink rounded-full bg-red-400" />1 Active</span>

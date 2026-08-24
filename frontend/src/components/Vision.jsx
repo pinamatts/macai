@@ -13,7 +13,7 @@ export default function Vision() {
     <section
       id="vision"
       data-testid="vision-section"
-      className="relative border-t border-white/5 py-28 lg:py-36"
+      className="relative border-t border-white/5 py-20 lg:py-36"
       style={{ "--mac-accent-rgb": isLgu ? "43 127 255" : "124 58 237" }}
     >
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-60" />
@@ -52,11 +52,11 @@ export default function Vision() {
         </Reveal>
 
         <Reveal>
-          <div className="mb-16 inline-flex border border-white/15 bg-mac-surface/60 p-1" data-testid="vision-mode-toggle">
+          <div className="mb-10 flex w-full flex-col border border-white/15 bg-mac-surface/60 p-1 sm:inline-flex sm:w-auto sm:flex-row lg:mb-16" data-testid="vision-mode-toggle">
             <button
               data-testid="vision-toggle-lgu"
               onClick={() => setMode("lgu")}
-              className={`flex items-center gap-2.5 px-6 py-3 font-display text-sm font-semibold uppercase tracking-[0.18em] transition-[background-color,color,box-shadow] duration-300 ${
+              className={`flex items-center justify-center gap-2.5 px-6 py-3 font-display text-sm font-semibold uppercase tracking-[0.18em] transition-[background-color,color,box-shadow] duration-300 ${
                 isLgu ? "bg-mac-accent text-white shadow-[0_0_24px_rgb(var(--mac-accent-rgb)/0.4)]" : "text-slate-400 hover:text-white"
               }`}
             >
@@ -65,7 +65,7 @@ export default function Vision() {
             <button
               data-testid="vision-toggle-schools"
               onClick={() => setMode("schools")}
-              className={`flex items-center gap-2.5 px-6 py-3 font-display text-sm font-semibold uppercase tracking-[0.18em] transition-[background-color,color,box-shadow] duration-300 ${
+              className={`flex items-center justify-center gap-2.5 px-6 py-3 font-display text-sm font-semibold uppercase tracking-[0.18em] transition-[background-color,color,box-shadow] duration-300 ${
                 !isLgu ? "bg-mac-accent text-white shadow-[0_0_24px_rgb(var(--mac-accent-rgb)/0.4)]" : "text-slate-400 hover:text-white"
               }`}
             >

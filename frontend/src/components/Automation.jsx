@@ -24,7 +24,7 @@ const ITEMS = [
 
 export default function Automation() {
   return (
-    <section id="automation" data-testid="automation-section" className="relative py-28 lg:py-36">
+    <section id="automation" data-testid="automation-section" className="relative py-20 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           index="01"

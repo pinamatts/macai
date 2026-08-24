@@ -52,6 +52,13 @@ Single-page marketing website for MAC AI Business Solutions (Cebu-based AI ERP +
 - Autoplays muted + loops + playsInline with parallax (existing useScroll/useTransform wrapper kept); poster = shot-junction.jpg; tuned to opacity-45 + bg-mac-base/60 overlay for visible motion with legible text
 - Verified: video playing in-browser (currentTime advancing, readyState 4), two screenshots 5s apart show scene change, headline contrast intact
 
+## Implemented (2026-08-24, update 4 — Camera-scan hero + mobile polish)
+- Hero on-load "camera scanning" sequence: full-viewport boot sweep beam, viewfinder corner brackets with "SYS ONLINE · SCAN ACTIVE" + Cebu coordinates, scan beam sweeping down the headline synced with masked line reveals (re-sequenced 0.35–1.8s)
+- Ops console: detection LockBoxes with converging corner brackets + confidence counters ticking 0→0.98/0.94, crosshair lines, live status line flipping "SCANNING SECTOR 04…" → "2 OBJECTS TRACKED" at 3.4s
+- Ops console now visible on mobile (was desktop-only)
+- Mobile pass: section padding py-20 (was py-28), hero pt-28, headline text-4xl on <640px (fixed orphaned "+"), marquee text-2xl, dashboard tile gaps tightened, Vision toggle stacks full-width on phones, mobile menu locks Lenis scroll while open
+- Verified: desktop hero end-state (brackets, lockboxes, status), mobile 390x844 hero/menu/vision/schools screenshots all clean
+
 ## Personas
 - LGU leadership (mayor's office, administrators) evaluating gov ERP + traffic/public-space vision
 - School administrators/security heads evaluating campus safety vision

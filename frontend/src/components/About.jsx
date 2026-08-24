@@ -24,7 +24,7 @@ const PILLARS = [
 
 export default function About() {
   return (
-    <section id="about" data-testid="about-section" className="relative border-t border-white/5 bg-mac-surface/30 py-28 lg:py-36">
+    <section id="about" data-testid="about-section" className="relative border-t border-white/5 bg-mac-surface/30 py-20 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           index="04"

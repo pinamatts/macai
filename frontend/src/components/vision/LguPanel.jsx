@@ -48,15 +48,15 @@ export default function LguPanel() {
       </Reveal>
 
       <Reveal delay={0.15}>
-        <div className="mt-14 grid gap-6 lg:grid-cols-3" data-testid="lgu-dashboard">
-          <div className="grid gap-6 sm:grid-cols-2 lg:col-span-2">
+        <div className="mt-10 grid gap-4 sm:gap-6 lg:mt-14 lg:grid-cols-3" data-testid="lgu-dashboard">
+          <div className="grid gap-3 sm:grid-cols-2 sm:gap-6 lg:col-span-2">
             <CameraTile bright testId="lgu-cam-highway" label="LGU Vision — City Junction Wall" img={REEL.junction} />
             <CameraTile bright testId="lgu-cam-crossing" label="Map — City Camera Network" img={REEL.map} />
             <CameraTile bright testId="lgu-cam-junction" label="Public Space — Occupancy & Flow" img={REEL.lobby} />
             <CameraTile bright testId="lgu-cam-market" label="Ops Wall — Live Feeds" img={REEL.opswall} />
           </div>
 
-          <div className="flex flex-col gap-4 border border-white/10 bg-mac-surface/60 p-5">
+          <div className="flex flex-col gap-4 border border-white/10 bg-mac-surface/60 p-4 sm:p-5">
             <p className="flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400">
               City Feed — Today
               <span className="flex items-center gap-1.5 text-emerald-400"><span className="h-1.5 w-1.5 animate-blink rounded-full bg-emerald-400" />Live</span>

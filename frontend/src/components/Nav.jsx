@@ -23,6 +23,12 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!window.__lenis) return;
+    if (open) window.__lenis.stop();
+    else window.__lenis.start();
+  }, [open]);
+
   const go = (id) => {
     setOpen(false);
     scrollToSection(id);

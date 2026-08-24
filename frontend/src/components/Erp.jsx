@@ -40,7 +40,7 @@ const PROCESS = [
 
 export default function Erp() {
   return (
-    <section id="erp" data-testid="erp-section" className="relative border-t border-white/5 bg-mac-surface/30 py-28 lg:py-36">
+    <section id="erp" data-testid="erp-section" className="relative border-t border-white/5 bg-mac-surface/30 py-20 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           index="02"
